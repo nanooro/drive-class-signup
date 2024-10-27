@@ -1,0 +1,133 @@
+body {
+  /* background: rgb(73,200,226);
+    background: linear-gradient(90deg, rgba(73,200,226,1) 14%, rgba(252,67,67,1) 50%, rgba(252,176,69,1) 100%);      */
+  background-color: #e5e7eb;
+  /* animation: bghover 3s ease-in-out left; */
+  animation: bganimation 3s ease-in-out 1s infinite alternate;
+  background-size: 200%;
+}
+h1 {
+  text-align: center;
+  padding: 30px;
+  color: #475569;
+  animation: mover 3s ease-in-out 1s infinite alternate;
+}
+.box {
+  /*outline: 5px solid black;
+    border: 5px solid black;*/
+  height: 350px;
+  width: 400px;
+  background-color:#22d3ee;
+  border-radius: 20px;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+/* .wrapper::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 10px;
+} */
+.boxcontent {
+  text-align: center;
+  padding: 20px;
+}
+.uname {
+  outline: none;
+  border: #475569;
+  border-radius: 5px;
+  padding: 10px;
+}
+.uage {
+  outline: none;
+  border: #475569;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+}
+.boxcontent2 {
+  text-align: center;
+  padding: -20px;
+}
+/* 
+.outline{
+  margin: 0 auto;
+  padding: 2em;
+  width: 300px;
+  background: #1c1f2b;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+}
+
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.outline::after, .outline::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 3px;
+  border-radius: 10px;
+  animation: 3s spin linear infinite;
+}
+.card::before{
+  filter: blur(1.5rem);
+  opacity: 0.5;
+}
+@keyframes spin{
+  from{
+    --angle: 0deg;
+  }
+  to{
+    --angle: 360deg;
+  } */
+.myParagraph{
+    color: #000000;
+    font-size: 25px;
+}
+.myParagraph1{
+    color: rgb(102, 255, 0);
+    font-size: 25px;
+}
+.myParagraph12{
+    color: red;
+    font-size: 25px;
+}
+.submit{
+    padding: 10px 40px;
+    background-color: #b3ff00;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+.submit:hover{
+    background-color: #cccccc;
+    animation: hvrbtn 1s ease-in-out delay iteration-count direction fill-mode;
+}
+@keyframes hvrbtn {
+    0%{
+        
+    }
+    100%{
+        transform: translateY(-10);
+    }
+}
